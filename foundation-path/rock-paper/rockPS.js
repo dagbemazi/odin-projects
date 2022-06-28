@@ -46,4 +46,11 @@ function game(rounds) {
 }
 
 numRounds = parseInt(prompt("Enter number of rounds to play:"));
-console.log(game(numRounds));
+result = game(numRounds);
+
+// Events
+const container = document.querySelector("h4");
+const paragraph = document.createElement("p");
+paragraph.textContent = result;
+
+container.appendChild(paragraph);
